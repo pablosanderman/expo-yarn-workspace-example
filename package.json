@@ -2,7 +2,10 @@
   "name": "@project/root",
   "version": "1.0.0",
   "scripts": {
-    "mobile": "yarn workspace @project/mobile expo start"
+    "mobile": "yarn workspace @project/mobile expo start",
+    "web": "yarn workspace @project/web next dev",
+    "server": "yarn workspace @project/trpc tsx watch src/router.ts",
+    "studio": "yarn workspace @project/prisma prisma studio"
   },
   "workspaces": [
     "apps/*",
